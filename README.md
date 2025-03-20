@@ -49,6 +49,10 @@ Configurer la base de données :
 
 Vérifiez que application.properties contient la bonne configuration.
 
+J'ai un utilisateur pour ce projet dans ma BDD
+spring.datasource.username=java
+spring.datasource.password=java
+
 Lancer l’application.
 
 MR Sega the best 
