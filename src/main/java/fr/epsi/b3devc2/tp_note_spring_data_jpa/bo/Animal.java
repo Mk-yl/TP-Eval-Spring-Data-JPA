@@ -22,13 +22,18 @@ public abstract class Animal {
     @JoinColumn(name = "petstore_id")
     private PetStore petStore;
 
+    // Constructeurs vide
     public Animal() {
     }
 
-    public Animal(Date birth, String couleur) {
+    // Constructeur avec paramètres
+    public Animal(Date birth, String couleur, PetStore petStore) {
         this.birth = birth;
         this.couleur = couleur;
+        this.petStore = petStore;
     }
+
+    // Getters and Setters
 
     public Long getId() {
         return id;

@@ -14,15 +14,20 @@ public class Address {
     private String zipCode;
     private String city;
 
+
+    // Constructeurs vide
     public Address() {
     }
 
+    // Constructeur avec paramètres
     public Address(String number, String street, String zipCode, String city) {
         this.number = number;
         this.street = street;
         this.zipCode = zipCode;
         this.city = city;
     }
+
+    // Getters and Setters
 
     public Long getId() {
         return id;

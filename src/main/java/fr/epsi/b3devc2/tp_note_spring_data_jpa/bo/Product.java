@@ -19,18 +19,28 @@ public class Product {
 
     private double price;
 
+
+    //relation many to many avec petstore
     @ManyToMany(mappedBy = "products")
     private Set<PetStore> petStores;
 
+    // Constructeurs vide
     public Product() {
     }
 
-    public Product(String code, String label, ProdType type, double price) {
-        this.code = code;
-        this.label = label;
-        this.type = type;
+
+    // Constructeur avec paramètres
+
+    public Product(Set<PetStore> petStores, double price, ProdType type, String label, String code) {
+        this.petStores = petStores;
         this.price = price;
+        this.type = type;
+        this.label = label;
+        this.code = code;
     }
+
+
+    // Getters and Setters
 
     public Long getId() {
         return id;

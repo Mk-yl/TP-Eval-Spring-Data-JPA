@@ -8,6 +8,13 @@ import jakarta.persistence.*;
 public class Cat extends Animal {
     private String chipId;
 
+    // Constructeurs vide
+    public Cat() {
+    }
+
+
+    //getters and setters
+
     public String getChipId() {
         return chipId;
     }
@@ -15,8 +22,6 @@ public class Cat extends Animal {
     public void setChipId(String chipId) {
         this.chipId = chipId;
     }
-
-
 
 
 }

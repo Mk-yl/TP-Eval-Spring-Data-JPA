@@ -32,14 +32,21 @@ public class PetStore {
     private Set<Animal> animals;
 
 
+    // Constructeurs vide
     public PetStore() {
     }
 
-    public PetStore(String name, String managerName, Address address) {
+    // Constructeur avec paramètres
+    public PetStore(Set<Animal> animals, Set<Product> products, Address address, String name, String managerName) {
+        this.animals = animals;
+        this.products = products;
+        this.address = address;
         this.name = name;
         this.managerName = managerName;
-        this.address = address;
     }
+
+
+    // Getters and Setters
 
     public Long getId() {
         return id;
