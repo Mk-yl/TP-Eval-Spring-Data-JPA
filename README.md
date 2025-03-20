@@ -18,7 +18,6 @@ Spring Boot
 
 Spring Data JPA
 
-H2 Database (ou MySQL/PostgreSQL)
 
 Maven
 
@@ -48,7 +47,7 @@ Cloner le projet :
 
 Configurer la base de données :
 
-Vérifiez que application.properties contient la bonne configuration (H2, MySQL...)
+Vérifiez que application.properties contient la bonne configuration.
 
 Lancer l’application.
 
